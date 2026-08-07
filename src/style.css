@@ -232,13 +232,6 @@ form button:hover{
     color:white;
 }
 
-.api-badge{
-    background:#16A34A;
-    padding:8px 14px;
-    border-radius:30px;
-    font-size:14px;
-}
-
 .upload-box{
     margin:20px 0;
     border:2px dashed #4B5563;

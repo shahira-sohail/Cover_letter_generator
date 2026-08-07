@@ -319,25 +319,25 @@ p{
 
 #cover-letter-output h1{
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 0 0 16px 0;
 }
 
 #cover-letter-output h2{
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin: 20px 0 10px 0;
 }
 
 #cover-letter-output p{
-    line-height: 1.8;
-    margin-bottom: 15px;
+    margin: 8px 0;
+    line-height: 1.6;
 }
 
 #cover-letter-output ul{
-    padding-left: 20px;
+    margin: 8px 0 16px 20px;
 }
 
 #cover-letter-output li{
-    margin-bottom: 8px;
+    margin: 6px 0;
 }
 
 #file-name{

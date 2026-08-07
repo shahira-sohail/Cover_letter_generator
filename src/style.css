@@ -132,9 +132,8 @@ form button:hover{
 }
 
 #cover-letter-output{
-    white-space:pre-wrap;
-    line-height:1.8;
-    color:#E5E7EB;
+    white-space: pre-wrap;
+    line-height: 1.8;
 }
 
 .loading-overlay{

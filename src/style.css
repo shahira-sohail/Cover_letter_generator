@@ -213,7 +213,7 @@ form button:hover{
 
 .menu a{
     display:flex;
-    align-items:center;
+    align-items:top;
     gap:15px;
     padding:14px;
     border-radius:10px;

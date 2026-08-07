@@ -278,7 +278,6 @@ label{
 
 p{
     font-size:14px;
-    color:#9CA3AF;
 }
 
 @media (max-width:992px){
@@ -358,4 +357,16 @@ p{
     background-color: #eff6ff;
     transform: scale(1.02);
     transition: 0.2s ease;
+}
+
+#cover-letter-output{
+    color:#000;
+}
+
+#cover-letter-output p,
+#cover-letter-output li,
+#cover-letter-output h1,
+#cover-letter-output h2,
+#cover-letter-output h3{
+    color:#000;
 }

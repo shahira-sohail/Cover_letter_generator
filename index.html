@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cover-letter-generator</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-file-lines"></i>
+            </div>
+            <div>CoverLetter</div>
+        </div>
+        <nav class="menu">
+            <a class="active">
+                <i class="fa-solid fa-table-columns"></i>
+                Dashboard
+            </a>
+            <a>
+                <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                My Application
+            </a>
+            <a>
+             <i class="fa-solid fa-book"></i>
+             Templates
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <a>
+                <i class="fa-solid fa-gear"></i>
+                API Security Settings
+            </a>
+        </div>
+    </aside>
+    <main class="main-content">
+        <header class="topbar">
+            <div class="page-title">
+                Dashboard
+            </div>
+            <div class="status">
+                <span>AI Cover Letter Architect</span>
+                <span>Stack v2026</span>
+                <span class="api-badge">
+                    AI Model: Gemini Flash
+                </span>
+            </div>
+        </header>
+        <div class="dashboard">
+            <section class="form-panel">
+                <header>
+                    Configure Your Cover Letter
+                </header>
+                <form id="form" autocomplete="off">
+                    <label for="candidate-name">Candidate Name</label><br>
+                    <input id="candidate-name" type="text" placeholder="Enter Name" required><br>
+                    <label for="target-role">Target Role</label><br>
+                    <input id="target-role" type="text" placeholder="Senior Software Engineer" required><br>
+                    <label for="target-company">Target Company</label><br>
+                    <input id="target-company" type="text" placeholder="Prodesk IT" required><br>
+                    <label for="key-skills">Key Skills</label><br>
+                    <textarea id="key-skills" placeholder="HTML, CSS, Javascript....." required></textarea><br>
+                    <label for="job-description">Job description</label><br>
+                    <textarea id="job-description" placeholder="Currently working as a Full Stack Trainee Intern at Prodesk IT...." required></textarea><br>
+                    <label>Generate with AI</label><br><br>
+                    <button>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        Generate
+                    </button>
+                    <label>Resume</label>
+                    <div class="upload-box" id="upload-box">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Upload Resume</h3>
+                        <p>Drag & Drop PDF</p>
+                        <button type="button" id="browse-btn">Browse File</button>
+                        <input 
+                        type="file"
+                        id="resume-upload"
+                        accept=".pdf"
+                        hidden
+                        >
+                        <p id="file-name">No file selected</p>
+                    </div>
+                </form>
+            </section>
+            <section class="preview-panel">
+                <div class="preview-header">
+                    <h2>Your AI Generated Cover Letter</h2>
+                    <div class="action-buttons">
+                        <button id="copy-btn">
+                             <i class="fa-solid fa-clone"></i>
+                             Copy to Clipboard
+                        </button>
+                        <button id="regenerate-btn">
+                            <i class="fa-solid fa-rotate-right"></i>
+                            Regenerate
+                        </button>
+                        <button id="download-btn">
+                            <i class="fa-solid fa-download"></i>
+                            Download PDF
+                        </button>
+                    </div>
+                </div>
+                <div class="letter-preview">
+                    <div id="cover-letter-output">
+                        Your generated cover letter will appear here.
+                    </div>
+                    <div class="loading-overlay hidden">
+                        <div class="loading-card">
+                            <div class="spinner"></div>
+                            <h2>Generating...</h2>
+                            <p>Synthesizing Prompt...</p>
+                            <p>Querying Gemini API...</p>
+                            <p>Drafting Cover Letter...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

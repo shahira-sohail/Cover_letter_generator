@@ -1,5 +1,6 @@
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 console.log(API_KEY);
+import html2pdf from "html2pdf.js";
 import "./style.css";
 import { marked } from "marked";
 import {jsPDF} from "jspdf";
@@ -159,16 +160,29 @@ function copyCoverLetter(){
 
 }
 
-function downloadPDF(){
-    const pdf = new jsPDF();
-    const text = output.textContent;
-    if(text.trim == "Your generated cover letter will appear here."){
-        return;
-    }
-    const lines = pdf.splitTextToSize(text,180);
-    pdf.text(lines,10,10);
-    pdf.save("Cover-Letter.pdf");
-    
+function downloadPDF() {
+
+    const element = document.getElementById("cover-letter-output");
+
+    html2pdf()
+        .set({
+            margin: 10,
+            filename: "Cover-Letter.pdf",
+            image: {
+                type: "jpeg",
+                quality: 1
+            },
+            html2canvas: {
+                scale: 2
+            },
+            jsPDF: {
+                unit: "mm",
+                format: "a4",
+                orientation: "portrait"
+            }
+        })
+        .from(element)
+        .save();
 }
 
 async function readResume(event) {

@@ -182,7 +182,7 @@ form button:hover{
     background:#1B2333;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:flex-start;
     border-right:1px solid #374151;
 }
 

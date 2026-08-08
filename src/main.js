@@ -1,5 +1,4 @@
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-console.log(API_KEY);
 import html2pdf from "html2pdf.js";
 import "./style.css";
 import { marked } from "marked";

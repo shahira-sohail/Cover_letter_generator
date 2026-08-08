@@ -68,6 +68,8 @@ async function generateCoverLetter(event = null){
         - Return the response in Markdown format with proper headings, paragraphs and bullet points where appropriate.
         - Keep the length around 300–400 words.
         - Do not invent experience that is not present in the resume.
+        - Remove the excess or unnecessary spaces between the heading and paragrahs.
+        - Make it ATS Friendly.
 
         IMPORTANT:
        Use proper Markdown formatting.

@@ -305,29 +305,31 @@ p{
     }
 }
 
-#cover-letter-output h1{
+#cover-letter-output h1 {
     font-size: 2rem;
-    margin: 0 0 16px 0;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
 }
 
-#cover-letter-output h2{
+#cover-letter-output h2 {
     font-size: 1.5rem;
-    margin: 20px 0 10px 0;
+    margin: 14px 0 6px 0;
+    line-height: 1.2;
 }
 
-#cover-letter-output p{
-    margin: 8px 0;
-    line-height: 1.6;
+#cover-letter-output p {
+    margin: 0 0 8px 0;
+    line-height: 1.5;
 }
 
-#cover-letter-output ul{
-    margin: 8px 0 16px 20px;
+#cover-letter-output ul {
+    margin: 4px 0 8px 0;
+    padding-left: 20px;
 }
 
-#cover-letter-output li{
-    margin: 6px 0;
+#cover-letter-output li {
+    margin-bottom: 4px;
 }
-
 #file-name{
     margin-top: 12px;
     color: #2563eb;

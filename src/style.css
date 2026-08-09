@@ -283,6 +283,12 @@ p{
         display:none;
     }
 }
+.error-message {
+    color: #ef4444;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+}
 
 @media (max-width:768px){
     body{

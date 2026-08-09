@@ -124,6 +124,11 @@ async function generateCoverLetter(event = null){
             if(!response.ok){
                 const error = await response.json();
                 console.log(error);
+                output.innerHTML = `
+                  <p class="error-message">
+                  Unable to generate the cover letter. Please try again.
+                 </p>
+               `;
                 return;
             }
 

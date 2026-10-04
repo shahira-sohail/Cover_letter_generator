@@ -1,4 +1,4 @@
-# AI Cover Letter Generator
+# AI Cover Letter Generator(Sprint 04)
 
 An AI-powered web application that generates professional and personalized cover letters based on the candidate's information, target job, company, skills, job description, and uploaded resume.
 
